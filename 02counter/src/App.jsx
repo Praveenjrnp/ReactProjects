@@ -19,6 +19,10 @@ function App() {
   let decValue= () => {
     // console.log("Clicked", counter);
     setCounter(counter - 1);
+
+    if(counter <= 0){ //If you don'r need negative value then you can use this condition.
+      setCounter(0);
+    }
   }
   return (
     <>
